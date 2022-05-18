@@ -11,6 +11,18 @@ const routes: Routes = [
     redirectTo: 'home',
     pathMatch: 'full'
   },
+  {
+    path: 'create-todo',
+    loadChildren: () => import('./create-todo/create-todo.module').then( m => m.CreateTodoPageModule)
+  },
+  {
+    path: 'update-todo/:id',
+    loadChildren: () => import('./update-todo/update-todo.module').then( m => m.UpdateTodoPageModule)
+  },
+  {
+    path: 'todo-list',
+    loadChildren: () => import('./todo-list/todo-list.module').then( m => m.TodoListPageModule)
+  },
 ];
 
 @NgModule({
