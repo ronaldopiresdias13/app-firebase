@@ -1,4 +1,8 @@
-on: push
+on:
+  create:
+    tags:
+      - v*
+
 name: Build app
 jobs:
   build:
