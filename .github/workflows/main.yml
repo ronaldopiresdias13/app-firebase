@@ -2,7 +2,6 @@ on:
   push:
     tags:
     - '*'
-
 name: Build app
 jobs:
   build:
