@@ -9,10 +9,6 @@ jobs:
         node-version: [12.x]
 
     steps:
-      - uses: actions/checkout@v2
-        with:
-          fetch-depth: 0
-
       - uses: actions/checkout@v1
 
       - name: Cache node modules
@@ -30,8 +26,8 @@ jobs:
         run: |
           npm i
           npm run build
-      - name: Push Build to Releases
-        uses: ncipollo/release-action@v1
-        with:
-          artifacts: "www/*"
-          token: "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"
+      # - name: Push Build to Releases
+      #   uses: ncipollo/release-action@v1
+      #   with:
+      #     artifacts: "www/*"
+      #     token: "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"
