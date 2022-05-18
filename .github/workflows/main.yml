@@ -1,8 +1,7 @@
 on:
   push:
-  create:
     tags:
-      - v*
+    - '*'
 
 name: Build app
 jobs:
