@@ -28,5 +28,5 @@ jobs:
       - name: Push Build to Releases
         uses: ncipollo/release-action@v1
         with:
-          artifacts: "dist/ionic-firestore/*"
+          artifacts: "www/*"
           token: "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"
